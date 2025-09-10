@@ -40,16 +40,17 @@ export default function SkillScreen() {
 
 const styles = StyleSheet.create({
     container:{
-        flex: 1,
+        flex:1,
         alignItems: 'center',
+        justifyContent: 'center',
         padding: 20,
-        backgroundColor: 'white'
+        backgroundColor: 'white',
     },
-    photo:{
-        width: 100,
-        height: 100,
-        borderRadius: 50,
-        marginBottom: 15
+    photo: {
+        width: 120,
+        height: 120,
+        borderRadius: 60,
+        marginBottom: 20
     },
     name:{
         fontSize: 22,
