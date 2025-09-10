@@ -1,6 +1,7 @@
 import { View, Text, Image, StyleSheet, FlatList } from 'react-native'
-import photo from '../../assets/icon.png'
+import photo from '../../assets/photo.png'
 import { StatusBar } from 'expo-status-bar'
+import { styles } from './SkillScreenStyles'
 
 const skills =[
     {
@@ -21,7 +22,7 @@ export default function SkillScreen() {
     return(
         <View style={styles.container}>
             <Image source={photo} style={styles.photo}/>
-            <Text style={styles.name}>Nome Completo</Text>
+            <Text style={styles.name}>Ícaro Ribeiro Pereira</Text>
             <Text style={styles.sibtitle}>Minhas Habilidades</Text>
             
             <FlatList 
@@ -37,42 +38,3 @@ export default function SkillScreen() {
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 20,
-        backgroundColor: 'white',
-    },
-    photo: {
-        width: 120,
-        height: 120,
-        borderRadius: 60,
-        marginBottom: 20
-    },
-    name:{
-        fontSize: 22,
-        fontWeight: 'bold'
-    },
-    sibtitle:{
-        fontSize: 18,
-        marginVertical: 15,
-        color: '#343434ff'
-    },
-    skillName:{
-        fontSize: 16
-    },
-    skillItem:{
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        width: '100%',
-        padding: 12,
-        borderBottomWidth: 1,
-        borderColor: '#cbcbcbff'
-    },
-    skillLevel:{
-        fontSize: 16,
-    }
-})
